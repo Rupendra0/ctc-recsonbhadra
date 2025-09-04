@@ -25,8 +25,8 @@ We aim to **Learn, Build, and Grow Together** with events, resources, and projec
 ---
 
 ## 🖼️ Preview
-![CTC Preview](docs/preview.png)  
-*(Add your screenshot here once the project is live)*
+<img width="1899" height="862" alt="image" src="https://github.com/user-attachments/assets/a56142b0-c975-467e-b5f7-2a68876d0b83" />
+
 
 ---
 
