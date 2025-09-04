@@ -137,6 +137,12 @@ body {
 /* ============================
    Buttons
    ============================ */
+
+.cta-btn a {
+  color: white; 
+  text-decoration: none;
+}
+
 .cta-btn,
 .contact-form button {
   background: linear-gradient(135deg, #4f46e5, #7c3aed, #9333ea);
