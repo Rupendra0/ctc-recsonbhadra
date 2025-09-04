@@ -14,7 +14,7 @@ const Home = () => {
             Community for Technology and Coding – Learn, Build, and Grow Together.
           </p>
           <button className="cta-btn" data-aos="zoom-in" data-aos-delay="200">
-            Join the Club
+            <a href="https://chat.whatsapp.com/GXtNVWbiDFi1IkRotX9yOW">Join the Club</a>
           </button>
         </div>
       </div>
