@@ -1,0 +1,64 @@
+.leaderboard {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.leaderboard h2 {
+  margin-bottom: 1.5rem;
+  color: #1de9b6;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 30, 25, 0.4);
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: #e0f2f1;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 15px rgba(0, 255, 200, 0.1);
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.rank {
+  font-weight: bold;
+  color: #1de9b6;
+}
+
+.points {
+  font-weight: bold;
+}
+
+/* Slide-in animation for each player */
+.slide-in {
+  animation: slideInRight 0.6s ease forwards;
+}
+
+.slide-in:nth-child(1) { animation-delay: 0.1s; }
+.slide-in:nth-child(2) { animation-delay: 0.2s; }
+.slide-in:nth-child(3) { animation-delay: 0.3s; }
+.slide-in:nth-child(4) { animation-delay: 0.4s; }
+.slide-in:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideInRight {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
