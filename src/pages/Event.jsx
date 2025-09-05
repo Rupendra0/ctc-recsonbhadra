@@ -11,9 +11,9 @@ const Event = () => {
           Stay tuned for upcoming announcements!
         </p>
         <ul>
-          <li>🔹 Weekly Coding Contest – Every Sunday</li>
-          <li>🔹 Debugging Challenge – Alternate Wednesdays</li>
-          <li>🔹 Monthly Mini Project – Last Week of the Month</li>
+          <li>🔹 First-Year Induction – Welcoming and introducing first-year students to the club.</li>
+          <li>🔹 Second-Year Induction – Engaging and onboarding second-year students into the community.</li>
+          <li>🔹 Guest Lecture – Inspiring talk by Software Engineer from Google.</li>
         </ul>
       </div>
     </div>
