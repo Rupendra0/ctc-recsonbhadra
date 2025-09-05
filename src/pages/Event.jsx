@@ -5,7 +5,7 @@ const Event = () => {
   return (
     <div className="page-container">
       <div className="glass card">
-        <h2>Upcoming Events 🎉</h2>
+        <h2>Upcoming Events</h2>
         <p>
           Join our coding contests, workshops, and hackathons.
           Stay tuned for upcoming announcements!
