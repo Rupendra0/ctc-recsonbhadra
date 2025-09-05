@@ -96,6 +96,7 @@ nav.navbar .join-btn:hover {
 /* Hamburger */
 nav.navbar .menu-toggle {
   display: none;
+  border: none;
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
