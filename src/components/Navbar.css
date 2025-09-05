@@ -124,13 +124,13 @@ nav.navbar .menu-toggle.open span:nth-child(3) {
 
 /* Tablet */
 @media (max-width: 1024px) {
-  nav.navbar .logo-img { height: 48px; }
+  nav.navbar .logo-img { height: 100px; }
   nav.navbar .nav-links { gap: 0.6rem; } 
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  nav.navbar .logo-img { height: 60px; }
+  nav.navbar .logo-img { height: 100px; }
 
   nav.navbar .menu-toggle { display: flex; }
 
@@ -182,7 +182,7 @@ nav.navbar .menu-toggle.open span:nth-child(3) {
 
 /* Extra small phones */
 @media (max-width: 480px) {
-  nav.navbar .logo-img { height: 36px; }
+  nav.navbar .logo-img { height: 100px; }
   nav.navbar .nav-links { 
     right: 4px; 
     width: 88vw; 
