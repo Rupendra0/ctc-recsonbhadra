@@ -93,7 +93,7 @@ const Home = () => {
       <SiCodeforces className="resource-icon codeforces" />
       <span>Codeforces</span>
     </a>
-    <a href="https://takeuforward.org/interview-experience/strivers-sde-sheet-top-coding-interview-problems/" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="300">
+    <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="300">
       <FaBook className="resource-icon docs" />
       <span>Striver’s A2Z (TUF)</span>
     </a>
