@@ -14,7 +14,7 @@ function Footer() {
           support@ctcclub.org
         </a>
       </p>
-      <h3> <strong>Developers :</strong> Aditya Agrahari & Rupendra Gangwar </h3>
+      <h3> <strong>Developers :</strong> Rupendra Gangwar & Aditya Agrahari </h3>
      <p>© 2025 CTC Club. All rights reserved.</p>
     </footer>
   );
