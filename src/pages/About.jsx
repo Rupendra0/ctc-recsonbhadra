@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="page-container">
       <div className="glass card">
-       <h2>💡 About Us</h2>
+       <h2>About Us</h2>
 <p>
   We are a vibrant student-driven community passionate about 
   <strong>coding, problem-solving, and technology</strong>. 
@@ -23,7 +23,7 @@ const About = () => {
 </p>
 
 <p>
-  🌟 What you’ll find at CTC:
+  What you’ll find at CTC:
 </p>
 <ul>
   <li>🎯 Mastering <strong>Data Structures & Algorithms</strong> with contests and practice sessions</li>
@@ -38,7 +38,7 @@ const About = () => {
 <p>
   Whether you’re aiming to crack <strong>placements</strong>, excel in <strong>competitive programming</strong>, 
   or build innovative <strong>projects</strong>, CTC provides the right platform to 
-  <em>learn, practice, and grow together</em>. 🚀
+  <em>learn, practice, and grow together</em>.
 </p>
 
       </div>
