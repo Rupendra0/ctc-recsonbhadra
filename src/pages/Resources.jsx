@@ -34,7 +34,7 @@ const Resources = () => {
     <FaBook className="resource-icon docs" />
     <span>Docs – Official Documentation</span>
   </a>
-  <a href="https://takeuforward.org/interview-experience/strivers-sde-sheet-top-coding-interview-problems/" target="_blank" rel="noreferrer">
+  <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2" target="_blank" rel="noreferrer">
     <FaBook className="resource-icon docs" />
     <span>Striver’s A2Z DSA Sheet</span>
   </a>
