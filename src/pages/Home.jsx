@@ -40,7 +40,7 @@ const Home = () => {
 </p>
 
 <p>
-  🌟 What you’ll find at CTC:
+    What you’ll find at CTC:
 </p>
 <ul>
   <li>🤝 Peer-to-peer <strong>mentorship</strong> and collaboration</li>
@@ -79,7 +79,7 @@ const Home = () => {
 
       {/* Resources Preview */}
       <section className="section" id="resources" data-aos="fade-up">
-  <h2>📚 Resources</h2>
+  <h2>Resources</h2>
   <div className="resources-grid preview">
     <a href="https://leetcode.com" target="_blank" rel="noreferrer" data-aos="flip-up">
       <SiLeetcode className="resource-icon leetcode" />
