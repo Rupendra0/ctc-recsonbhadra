@@ -79,22 +79,35 @@ const Home = () => {
 
       {/* Resources Preview */}
       <section className="section" id="resources" data-aos="fade-up">
-        <h2>📚 Resources</h2>
-        <div className="resources-grid preview">
-          <a href="https://leetcode.com" target="_blank" rel="noreferrer" data-aos="flip-up">
-            <SiLeetcode className="resource-icon leetcode" />
-            <span>LeetCode</span>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="100">
-            <FaGithub className="resource-icon github" />
-            <span>GitHub</span>
-          </a>
-          <a href="https://codeforces.com" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="200">
-            <SiCodeforces className="resource-icon codeforces" />
-            <span>Codeforces</span>
-          </a>
-        </div>
-      </section>
+  <h2>📚 Resources</h2>
+  <div className="resources-grid preview">
+    <a href="https://leetcode.com" target="_blank" rel="noreferrer" data-aos="flip-up">
+      <SiLeetcode className="resource-icon leetcode" />
+      <span>LeetCode</span>
+    </a>
+    <a href="https://github.com" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="100">
+      <FaGithub className="resource-icon github" />
+      <span>GitHub</span>
+    </a>
+    <a href="https://codeforces.com" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="200">
+      <SiCodeforces className="resource-icon codeforces" />
+      <span>Codeforces</span>
+    </a>
+    <a href="https://takeuforward.org/interview-experience/strivers-sde-sheet-top-coding-interview-problems/" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="300">
+      <FaBook className="resource-icon docs" />
+      <span>Striver’s A2Z (TUF)</span>
+    </a>
+    <a href="https://www.geeksforgeeks.org" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="400">
+      <SiGeeksforgeeks className="resource-icon gfg" />
+      <span>GeeksforGeeks</span>
+    </a>
+    <a href="https://www.codechef.com" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="500">
+      <SiCodechef className="resource-icon codechef" />
+      <span>CodeChef</span>
+    </a>
+  </div>
+</section>
+
     </div>
   );
 };
