@@ -23,11 +23,11 @@ nav.navbar .logo-container {
   gap: 0.6rem; 
 }
 nav.navbar .logo-img {
-  height: 55px;
+  height: 100px;
   width: auto;
   object-fit: contain;
   padding: 3px 0;
-  margin-left: -5px;
+  margin-left: -10px;
 }
 
 /* Desktop links */
