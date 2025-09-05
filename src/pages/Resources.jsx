@@ -26,7 +26,7 @@ const Resources = () => {
     <SiCodeforces className="resource-icon codeforces" />
     <span>Codeforces – Competitive Programming</span>
   </a>
-  <a href="https://www.codechef.com" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="500">
+  <a href="https://www.codechef.com" target="_blank" rel="noreferrer" >
       <SiCodechef className="resource-icon codechef" />
       <span>CodeChef</span>
     </a>
