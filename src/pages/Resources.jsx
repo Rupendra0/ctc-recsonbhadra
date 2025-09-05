@@ -6,7 +6,7 @@ import "./Page.css"; // keep existing styles
 const Resources = () => {
   return (
     <div className="resources-section glass" data-aos="fade-up">
-      <h2>📚 Coding Resources</h2>
+      <h2>Coding Resources</h2>
 <p>Here are some recommended platforms & tools:</p>
 
 <div className="resources-grid">
