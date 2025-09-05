@@ -63,16 +63,16 @@ const Home = () => {
         <h2>🎉 Upcoming Events</h2>
         <div className="card-grid">
           <div className="glass small-card" data-aos="zoom-in">
-            <h3>Weekly Coding Contest</h3>
-            <p>Sharpen your skills every Sunday.</p>
+            <h3>First-Year Induction</h3>
+            <p>Welcoming and introducing first-year students to the club</p>
           </div>
           <div className="glass small-card" data-aos="zoom-in" data-aos-delay="100">
-            <h3>Debugging Challenge</h3>
-            <p>Fix tricky bugs & boost problem-solving.</p>
+            <h3>Second-Year Induction</h3>
+            <p>Engaging and onboarding second-year students into the community</p>
           </div>
           <div className="glass small-card" data-aos="zoom-in" data-aos-delay="200">
-            <h3>Monthly Mini Project</h3>
-            <p>Build real-world apps with peers.</p>
+            <h3>Guest Lecture</h3>
+            <p>Inspiring talk from Sofware Engineer from Google</p>
           </div>
         </div>
       </section>
