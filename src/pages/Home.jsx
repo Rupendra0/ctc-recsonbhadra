@@ -9,7 +9,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="hero" data-aos="fade-up">
         <div className="hero-content glass">
-          <h1>🚀 Welcome to CTC - REC Sonbhadra</h1>
+          <h1>Welcome to CTC - REC Sonbhadra</h1>
           <p>
             Community for Technology and Coding – Learn, Build, and Grow Together.
           </p>
