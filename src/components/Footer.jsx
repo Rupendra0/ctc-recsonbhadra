@@ -13,11 +13,9 @@ function Footer() {
         <a href="mailto:support@ctcclub.org" className="footer-link">
           support@ctcclub.org
         </a>
-        <strong>Developers :</strong> Aditya Agrahari & Rupendra Gangwar
-      </h3>
       </p>
-      <p>© 2025 CTC Club. All rights reserved.</p>
-      <h3>
+      <h3> <strong>Developers :</strong> Aditya Agrahari & Rupendra Gangwar </h3>
+     <p>© 2025 CTC Club. All rights reserved.</p>
     </footer>
   );
 }
