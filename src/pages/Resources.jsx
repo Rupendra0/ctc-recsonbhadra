@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaCode, FaBook } from "react-icons/fa";
-import { SiLeetcode, SiGeeksforgeeks, SiCodeforces } from "react-icons/si";
+import { SiLeetcode, SiGeeksforgeeks, SiCodeforces , SiCodechef} from "react-icons/si";
 import "./Page.css"; // keep existing styles
 
 const Resources = () => {
@@ -26,6 +26,10 @@ const Resources = () => {
     <SiCodeforces className="resource-icon codeforces" />
     <span>Codeforces – Competitive Programming</span>
   </a>
+  <a href="https://www.codechef.com" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="500">
+      <SiCodechef className="resource-icon codechef" />
+      <span>CodeChef</span>
+    </a>
   <a href="https://devdocs.io/" target="_blank" rel="noreferrer">
     <FaBook className="resource-icon docs" />
     <span>Docs – Official Documentation</span>
