@@ -95,7 +95,7 @@ const Home = () => {
     </a>
     <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="300">
       <FaBook className="resource-icon docs" />
-      <span>Striver’s A2Z (TUF)</span>
+      <span>Striver’s A2Z DSA Sheet</span>
     </a>
     <a href="https://www.geeksforgeeks.org" target="_blank" rel="noreferrer" data-aos="flip-up" data-aos-delay="400">
       <SiGeeksforgeeks className="resource-icon gfg" />
