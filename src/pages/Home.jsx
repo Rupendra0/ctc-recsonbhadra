@@ -9,7 +9,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="hero" data-aos="fade-up">
         <div className="hero-content glass">
-          <h1>🚀 Welcome to CTC</h1>
+          <h1>🚀 Welcome to CTC - REC Sonbhadra</h1>
           <p>
             Community for Technology and Coding – Learn, Build, and Grow Together.
           </p>
@@ -24,11 +24,38 @@ const Home = () => {
       {/* About Section */}
       <section className="section glass" id="about" data-aos="fade-right">
         <h2>💡 About Us</h2>
-        <p>
-          We are a student-driven community passionate about coding, problem-solving,
-          and technology. At CTC, you’ll find workshops, contests, projects, and 
-          mentorship to help you grow as a coder and innovator.
-        </p>
+<p>
+  We are a vibrant student-driven community passionate about 
+  <strong>coding, problem-solving, and technology</strong>. 
+  At CTC, we believe in <em>learning by doing</em> — whether it’s 
+  building projects, cracking coding challenges, or collaborating 
+  on real-world tech problems. 
+</p>
+
+<p>
+  Our mission is to create a supportive ecosystem where 
+  students can explore new technologies, sharpen their 
+  <strong>Data Structures & Algorithms</strong> skills, and grow 
+  into confident developers and innovators. 
+</p>
+
+<p>
+  🌟 What you’ll find at CTC:
+</p>
+<ul>
+  <li>🤝 Peer-to-peer <strong>mentorship</strong> and collaboration</li>
+  <li>🎯 Regular <strong>coding contests</strong> & debugging challenges</li>
+  <li>🛠 Hands-on <strong>mini projects</strong> & hackathons</li>
+  <li>📚 Curated <strong>learning resources</strong> & workshops</li>
+  <li>🚀 Opportunities to showcase your <strong>skills & creativity</strong></li>
+</ul>
+
+<p>
+  Whether you’re a beginner taking your first steps in coding or an 
+  experienced coder aiming for <strong>competitive programming excellence</strong>, 
+  CTC is the place where you can learn, share, and grow together. 
+</p>
+
       </section>
 
       {/* Events Preview */}
