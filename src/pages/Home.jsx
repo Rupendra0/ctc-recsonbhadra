@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiCodeforces, SiGeeksforgeeks, SiCodechef } from "react-icons/si";
 import { FaGithub, FaBook } from "react-icons/fa";
 import "./Page.css";
