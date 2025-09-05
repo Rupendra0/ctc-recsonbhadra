@@ -12,7 +12,7 @@ nav.navbar {
   backdrop-filter: blur(12px);
   overflow: visible;
   position: relative;
-  font-size: 12px;
+  font-size: 20px;
   margin-top: 10px;
 }
 
