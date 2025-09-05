@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/logo2.jpg";
 
@@ -10,9 +10,9 @@ const Navbar = () => {
     <nav className="navbar glass" aria-label="Primary">
       {/* Logo */}
      <div className="logo-container">
-  <a href="#">
+  <Link to="/">
     <img src={logo} alt="Logo" className="logo-img" />
-  </a>
+  </Link>
 </div>
 
       {/* Hamburger */}
