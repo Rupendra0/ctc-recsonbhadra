@@ -1,16 +1,18 @@
 import React, { useEffect } from "react";
+import "./App.css"; // Load CSS at the top
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer"; 
+
 import Home from "./pages/Home";
 import Event from "./pages/Event";
 import Leaderboard from "./pages/Leaderboard";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import "./App.css";
 
 function App() {
   useEffect(() => {
@@ -36,19 +38,25 @@ function App() {
       {/* ☄️ Comet */}
       <div className="comet"></div>
 
-      {/* Navbar */}
-      <Navbar />
+      {/* Layout Wrapper */}
+      <div className="flex flex-col min-h-screen relative z-10">
+        {/* Navbar */}
+        <Navbar />
 
-      {/* Main Page Content */}
-      <div className="main">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/event" element={<Event />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        {/* Main Page Content */}
+        <main className="flex-grow main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/event" element={<Event />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+   <Footer/>
       </div>
     </Router>
   );

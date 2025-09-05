@@ -1,48 +1,63 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0d1b1e, #0f2f2f);
-  color: #e0f2f1;
-  min-height: 100vh;
-}
-
-.glass {
-  background: rgba(15, 40, 35, 0.55);
-  border-radius: 15px;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.navbar {
+/* Welcome / Hero Section */
+.hero {
+  min-height: 90vh;         /* puri screen cover karega but thoda kam */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;  /* vertically center */
   align-items: center;
-  padding: 1rem 3rem;
+  text-align: center;
+  padding: 3rem 1rem;       /* top/bottom padding adjust */
+  margin-top: 0;            /* agar pehle se margin-top diya hai to hata do */
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #b2dfdb;
+/* Heading Style */
+.hero h1 {
+  font-size: 3rem;
   font-weight: bold;
-  transition: color 0.3s ease;
+  color: white;             /* tumne white change kiya tha */
+  margin-bottom: 1rem;
 }
 
-.navbar ul li a:hover {
-  color: #1de9b6;
+/* Paragraph Style */
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e0e0e0;
 }
 
-.main {
-  padding: 2rem;
-  animation: fadeIn 1.5s ease-in-out;
+/* 🔹 Responsive breakpoints */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;        /* chhoti screen pe thoda kam height */
+    padding: 2rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+    padding: 1.5rem 1rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
 }

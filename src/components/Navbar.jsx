@@ -1,44 +1,62 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/logo2.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar glass">
+    <nav className="navbar glass" aria-label="Primary">
       {/* Logo */}
-      <h1 className="logo">Community for Technology and Coding</h1>
+      <div className="logo-container">
+        <img src={logo} alt="Logo" className="logo-img" />
+      </div>
 
-      {/* Hamburger Menu */}
-      <div
+      {/* Hamburger */}
+      <button
         className={`menu-toggle ${isOpen ? "open" : ""}`}
+        aria-label="Toggle menu"
+        aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
-      {/* Nav Links */}
+      {/* Links */}
       <ul className={`nav-links ${isOpen ? "active" : ""}`}>
         <li>
-          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+          <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
         </li>
         <li>
-          <Link to="/event" onClick={() => setIsOpen(false)}>Event</Link>
+          <NavLink to="/event" onClick={() => setIsOpen(false)}>Event</NavLink>
         </li>
         <li>
-          <Link to="/leaderboard" onClick={() => setIsOpen(false)}>Leaderboard</Link>
+          <NavLink to="/leaderboard" onClick={() => setIsOpen(false)}>Leaderboard</NavLink>
         </li>
         <li>
-          <Link to="/resources" onClick={() => setIsOpen(false)}>Resources</Link>
+          <NavLink to="/resources" onClick={() => setIsOpen(false)}>Resources</NavLink>
         </li>
         <li>
-          <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+          <NavLink to="/about" onClick={() => setIsOpen(false)}>About</NavLink>
         </li>
         <li>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
+          <NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact Us</NavLink>
+        </li>
+
+        {/* Join Now Button */}
+        <li className="mobile-join">
+          <a
+            href="https://chat.whatsapp.com/GXtNVWbiDFi1IkRotX9yOW"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="join-btn"
+            onClick={() => setIsOpen(false)}
+          >
+            Join Now
+          </a>
         </li>
       </ul>
     </nav>

@@ -1,12 +1,42 @@
 /* ============================
    Global Galaxy Theme
    ============================ */
+
+   /* Global horizontal scroll fix */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* Prevent any child element from breaking layout */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Hero / Section fix */
+.hero, .section, .glass, .resources-grid, .card-grid {
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+/* Navbar fix */
+nav.navbar {
+  max-width: 100% !important;
+  overflow-x: hidden;
+  height: 50px;
+  overflow-y: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   color: #e2e6f5;
-  overflow-x: hidden;
+  overflow-x: hidden; /* no horizontal scroll */
   position: relative;
 
   /* Galaxy gradient */
@@ -83,9 +113,11 @@ body {
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1100px;
+  width: 90%; /* responsive width */
   color: #e2e6f5;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   box-shadow: 0px 8px 30px rgba(80, 60, 150, 0.25);
+  box-sizing: border-box;
 }
 
 .section:hover,
@@ -106,6 +138,7 @@ body {
   text-align: center;
   padding: 2rem;
   background: transparent !important;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -115,7 +148,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3.4rem;
+  font-size: clamp(2rem, 5vw, 3.4rem);
   margin-bottom: 1rem;
   color: #fff;
   text-shadow: 0 0 22px rgba(160, 120, 255, 0.8);
@@ -123,7 +156,7 @@ body {
 }
 
 .hero-content p {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   margin-bottom: 2rem;
   color: #d1d5e7;
   opacity: 0.95;
@@ -137,7 +170,6 @@ body {
 /* ============================
    Buttons
    ============================ */
-
 .cta-btn a {
   color: white; 
   text-decoration: none;
@@ -172,7 +204,7 @@ body {
 .about-section h2,
 .contact-section h2,
 .leaderboard-section h2 {
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
   margin-bottom: 1.5rem;
   color: #ffffff;
   text-shadow: 0 0 14px rgba(160, 120, 255, 0.85);
@@ -187,6 +219,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.2rem;
   margin-top: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .resources-grid a {
@@ -210,7 +244,6 @@ body {
   color: #fff;
 }
 
-/* Icon styles */
 .resource-icon {
   font-size: 1.9rem;
   flex-shrink: 0;
@@ -223,7 +256,6 @@ body {
 .resource-icon.codeforces { color: #1f8acb; }
 .resource-icon.docs       { color: #9fa6b2; }
 
-/* Glow on hover */
 .resources-grid a:hover .resource-icon.leetcode   { text-shadow: 0 0 15px #f89f1b; }
 .resources-grid a:hover .resource-icon.github     { text-shadow: 0 0 15px #ffffff; }
 .resources-grid a:hover .resource-icon.gfg        { text-shadow: 0 0 15px #0f9d58; }
@@ -250,6 +282,8 @@ body {
   color: #e2e6f5;
   font-size: 1rem;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
+  width: 100%; /* responsive */
+  box-sizing: border-box;
 }
 
 .contact-form input:focus,
@@ -269,4 +303,26 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================
+   Responsive Tweaks
+   ============================ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-content { padding: 2rem; }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .hero { padding: 1rem; height: auto; min-height: 70vh; }
+  .section, .card, .glass { padding: 1.5rem; margin: 1.2rem auto; }
+}
+
+/* Extra Small */
+@media (max-width: 480px) {
+  .hero-content { padding: 1rem; }
+  .resources-grid { grid-template-columns: 1fr; }
+  .section h2 { font-size: 1.6rem; }
 }
