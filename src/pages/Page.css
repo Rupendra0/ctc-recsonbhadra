@@ -27,7 +27,7 @@ html, body {
 nav.navbar {
   max-width: 100% !important;
   overflow-x: hidden;
-  height: 50px;
+  height: 80px;
   overflow-y: hidden;
 }
 
