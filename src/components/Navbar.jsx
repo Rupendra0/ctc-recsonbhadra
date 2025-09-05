@@ -9,9 +9,11 @@ const Navbar = () => {
   return (
     <nav className="navbar glass" aria-label="Primary">
       {/* Logo */}
-      <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo-img" />
-      </div>
+     <div className="logo-container">
+  <a href="#">
+    <img src={logo} alt="Logo" className="logo-img" />
+  </a>
+</div>
 
       {/* Hamburger */}
       <button
