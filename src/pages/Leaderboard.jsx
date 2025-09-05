@@ -3,16 +3,16 @@ import "./Leaderboard.css";
 
 const Leaderboard = () => {
   const players = [
-    { name: "Alice", points: 250 },
-    { name: "Bob", points: 200 },
-    { name: "Charlie", points: 180 },
-    { name: "David", points: 160 },
-    { name: "Eva", points: 140 },
+    { name: "N/A", points: 0 },
+    { name: "N/A", points: 0 },
+    { name: "N/A", points: 0 },
+    { name: "N/A", points: 0 },
+    { name: "N/A", points: 0 },
   ];
 
   return (
     <div className="leaderboard glass">
-      <h2>🏆 Leaderboard</h2>
+      <h2> Leaderboard</h2>
       <ul>
         {players.map((player, index) => (
           <li key={index} className="slide-in">
