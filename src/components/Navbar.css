@@ -130,7 +130,7 @@ nav.navbar .menu-toggle.open span:nth-child(3) {
 
 /* Mobile */
 @media (max-width: 768px) {
-  nav.navbar .logo-img { height: 42px; }
+  nav.navbar .logo-img { height: 60px; }
 
   nav.navbar .menu-toggle { display: flex; }
 
