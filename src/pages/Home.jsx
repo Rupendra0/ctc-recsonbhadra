@@ -9,7 +9,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="hero" data-aos="fade-up">
         <div className="hero-content glass">
-          <h1>Welcome to CTC - REC Sonbhadra</h1>
+          <h1>  Welcome to CTC - REC Sonbhadra</h1>
           <p>
             Community for Technology and Coding – Learn, Build, and Grow Together.
           </p>
@@ -23,7 +23,7 @@ const Home = () => {
 
       {/* About Section */}
       <section className="section glass" id="about" data-aos="fade-right">
-        <h2>💡 About Us</h2>
+        <h2> About Us</h2>
 <p>
   We are a vibrant student-driven community passionate about 
   <strong>coding, problem-solving, and technology</strong>. 
@@ -60,7 +60,7 @@ const Home = () => {
 
       {/* Events Preview */}
       <section className="section" id="events" data-aos="fade-left">
-        <h2>🎉 Upcoming Events</h2>
+        <h2> Upcoming Events</h2>
         <div className="card-grid">
           <div className="glass small-card" data-aos="zoom-in">
             <h3>First-Year Induction</h3>
