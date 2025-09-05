@@ -1,127 +1,197 @@
-/* ============================
-   Sticky Glass Navbar
-   ============================ */
-.navbar {
-  position: sticky;
+/* Navbar.css — responsive and optimized */
+
+/* Base / positioning */
+nav.navbar {
+  position: sticky;      
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-
+  z-index: 2000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-
-  background: rgba(15, 10, 40, 0.65);
+  padding: 0.6rem 1rem;
+  background: rgba(25, 20, 50, 0.75);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(120, 100, 255, 0.25);
-  box-shadow: 0px 4px 12px rgba(120, 100, 255, 0.15);
+  overflow: visible;
+  position: relative;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0 12px rgba(140, 120, 255, 0.7);
+/* Logo container */
+nav.navbar .logo-container { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.6rem; 
+}
+nav.navbar .logo-img {
+  height: 0px;
+  width: auto;
+  transition: height .22s ease;
+  object-fit: contain;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: -5px;
 }
 
-/* ============================
-   Desktop Links
-   ============================ */
-.nav-links {
+/* Desktop links */
+nav.navbar .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 0.8rem;   /* 🔧 spacing reduced (pehle 1.4rem tha) */
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
-.nav-links li a {
+/* Link style */
+nav.navbar .nav-links li a {
   text-decoration: none;
-  font-weight: 500;
   color: #fff;
-  position: relative;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all .25s ease;
+}
+nav.navbar .nav-links li a:hover {
+  color: #00ffcc;
+  background: rgba(0, 255, 204, 0.1);
 }
 
-/* Neon underline hover */
-.nav-links li a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background: #7c3aed; /* neon violet */
-  box-shadow: 0 0 8px rgba(124, 58, 237, 0.7);
-  transition: width 0.3s ease-in-out;
+/* ✅ Active link highlight (rounded box) */
+nav.navbar .nav-links li a.active {
+  color: #00ffcc;
+  font-weight: 600;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  background: rgba(0, 255, 204, 0.08);
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
 }
 
-.nav-links li a:hover {
-  color: #a78bfa; /* lighter purple on hover */
+/* ====== Join Now Button ====== */
+nav.navbar .join-btn {
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 0 6px #25D366, 0 0 12px #25D366;
+  transition: all 0.3s ease-in-out;
+  animation: glow 1.5s infinite alternate;
 }
 
-.nav-links li a:hover::after {
-  width: 100%;
+nav.navbar .join-btn:hover {
+  background: #20b954;
+  box-shadow: 0 0 12px #25D366, 0 0 20px #25D366;
 }
 
-/* ============================
-   Mobile Menu Toggle
-   ============================ */
-.menu-toggle {
+/* Glowing Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 4px #25D366, 0 0 10px #25D366;
+  }
+  to {
+    box-shadow: 0 0 12px #25D366, 0 0 22px #25D366;
+  }
+}
+
+/* Hamburger */
+nav.navbar .menu-toggle {
   display: none;
   flex-direction: column;
-  cursor: pointer;
   gap: 6px;
-  z-index: 1100;
+  cursor: pointer;
+  z-index: 2100;
 }
-
-.menu-toggle span {
-  width: 28px;
+nav.navbar .menu-toggle span {
+  width: 26px;
   height: 3px;
-  background: #7c3aed;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+  background: #fff;
+  border-radius: 3px;
+  transition: transform .25s ease, opacity .25s ease;
 }
 
-/* When menu is open → animate to X */
-.menu-toggle.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+/* Animate hamburger when open */
+nav.navbar .menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
 }
-.menu-toggle.open span:nth-child(2) {
+nav.navbar .menu-toggle.open span:nth-child(2) {
   opacity: 0;
 }
-.menu-toggle.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+nav.navbar .menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
 }
 
-/* ============================
-   Responsive Styles
-   ============================ */
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  nav.navbar .logo-img { height: 68px; }
+  nav.navbar .nav-links { gap: 0.6rem; }  /* 🔧 kam spacing tablet */
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-  .nav-links {
+  nav.navbar .logo-img { height: 60px; }
+
+  nav.navbar .menu-toggle { display: flex; }
+
+  nav.navbar .nav-links {
     position: absolute;
-    top: 70px;
-    right: 0;
+    top: 100%; 
+    right: 0; 
+    width: 240px;
+    max-width: 92vw;
     flex-direction: column;
-    background: rgba(20, 10, 40, 0.95);
-    backdrop-filter: blur(12px);
-    width: 220px;
-    padding: 1.2rem;
-    border-left: 1px solid rgba(120, 100, 255, 0.25);
-    border-bottom: 1px solid rgba(120, 100, 255, 0.25);
-    box-shadow: -5px 5px 15px rgba(120, 100, 255, 0.25);
-
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    align-items: flex-start;
+    background: rgba(25, 20, 50, 0.98);
+    padding: 1rem 0.9rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: -8px 10px 30px rgba(40, 20, 80, 0.35);
+    transform: translateX(115%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .32s cubic-bezier(.2,.8,.2,1), opacity .22s ease;
+    z-index: 2050;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    gap: 0.4rem;   /* 🔧 kam spacing mobile */
   }
 
-  .nav-links.active {
+  nav.navbar .nav-links.active {
     transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  .menu-toggle {
-    display: flex;
+  nav.navbar .nav-links li {
+    width: 100%;
+    margin: 0.4rem 0;
+  }
+  nav.navbar .nav-links li a {
+    display: block;
+    padding: 0.5rem 0.4rem;
+    width: 100%;
+  }
+
+  /* Join button mobile */
+  nav.navbar .join-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  nav.navbar .logo-img { height: 52px; }
+  nav.navbar .nav-links { 
+    right: 4px; 
+    width: 88vw; 
+    padding: 0.8rem;
+    gap: 0.3rem;  /* 🔧 aur kam spacing chhoti screens ke liye */
   }
 }

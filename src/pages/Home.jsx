@@ -19,6 +19,8 @@ const Home = () => {
         </div>
       </div>
 
+    
+
       {/* About Section */}
       <section className="section glass" id="about" data-aos="fade-right">
         <h2>💡 About Us</h2>

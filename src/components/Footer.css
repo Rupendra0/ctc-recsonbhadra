@@ -1,0 +1,30 @@
+.footer {
+  text-align: center;
+  padding: 1.8rem 1rem;
+  background: rgba(15, 10, 35, 0.85); /* Deep galaxy tone */
+  color: #e2e6f5;
+  font-size: 0.95rem;
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(140, 120, 255, 0.25); /* Galaxy border */
+  box-shadow: 0 -4px 20px rgba(80, 60, 150, 0.35);
+}
+
+.footer p {
+  margin: 0.4rem 0;
+}
+
+.footer-link {
+  color: #a78bfa; /* Light purple accent */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #c4b5fd; /* Brighter purple on hover */
+}
+
+.footer strong {
+  color: #7c3aed; /* Vibrant violet for emphasis */
+}
