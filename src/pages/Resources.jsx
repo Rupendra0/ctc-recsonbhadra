@@ -7,30 +7,67 @@ const Resources = () => {
   return (
     <div className="resources-section glass" data-aos="fade-up">
       <h2>📚 Coding Resources</h2>
-      <p>Here are some recommended platforms & tools:</p>
+<p>Here are some recommended platforms & tools:</p>
 
-      <div className="resources-grid">
-        <a href="https://leetcode.com" target="_blank" rel="noreferrer">
-          <SiLeetcode className="resource-icon leetcode" />
-          <span>LeetCode – DSA Practice</span>
-        </a>
-        <a href="https://github.com" target="_blank" rel="noreferrer">
-          <FaGithub className="resource-icon github" />
-          <span>GitHub – Version Control</span>
-        </a>
-        <a href="https://www.geeksforgeeks.org" target="_blank" rel="noreferrer">
-          <SiGeeksforgeeks className="resource-icon gfg" />
-          <span>GeeksForGeeks – Tutorials</span>
-        </a>
-        <a href="https://codeforces.com" target="_blank" rel="noreferrer">
-          <SiCodeforces className="resource-icon codeforces" />
-          <span>Codeforces – Competitive Programming</span>
-        </a>
-        <a href="https://devdocs.io/" target="_blank" rel="noreferrer">
-          <FaBook className="resource-icon docs" />
-          <span>Docs – Official Documentation</span>
-        </a>
-      </div>
+<div className="resources-grid">
+  <a href="https://leetcode.com" target="_blank" rel="noreferrer">
+    <SiLeetcode className="resource-icon leetcode" />
+    <span>LeetCode – DSA Practice</span>
+  </a>
+  <a href="https://github.com" target="_blank" rel="noreferrer">
+    <FaGithub className="resource-icon github" />
+    <span>GitHub – Version Control</span>
+  </a>
+  <a href="https://www.geeksforgeeks.org" target="_blank" rel="noreferrer">
+    <SiGeeksforgeeks className="resource-icon gfg" />
+    <span>GeeksForGeeks – Tutorials</span>
+  </a>
+  <a href="https://codeforces.com" target="_blank" rel="noreferrer">
+    <SiCodeforces className="resource-icon codeforces" />
+    <span>Codeforces – Competitive Programming</span>
+  </a>
+  <a href="https://devdocs.io/" target="_blank" rel="noreferrer">
+    <FaBook className="resource-icon docs" />
+    <span>Docs – Official Documentation</span>
+  </a>
+  <a href="https://takeuforward.org/interview-experience/strivers-sde-sheet-top-coding-interview-problems/" target="_blank" rel="noreferrer">
+    <FaBook className="resource-icon docs" />
+    <span>Striver’s A2Z DSA Sheet</span>
+  </a>
+  <a href="https://practice.geeksforgeeks.org/explore?page=1&sortBy=submissions" target="_blank" rel="noreferrer">
+    <SiGeeksforgeeks className="resource-icon gfg" />
+    <span>GFG Problem Practice</span>
+  </a>
+  <a href="https://atcoder.jp/" target="_blank" rel="noreferrer">
+    <SiCodeforces className="resource-icon codeforces" />
+    <span>AtCoder – Competitive Programming</span>
+  </a>
+  <a href="https://www.interviewbit.com/" target="_blank" rel="noreferrer">
+    <FaBook className="resource-icon docs" />
+    <span>InterviewBit – Coding & Interviews</span>
+  </a>
+  <a href="https://neetcode.io/" target="_blank" rel="noreferrer">
+    <FaBook className="resource-icon docs" />
+    <span>NeetCode – DSA Roadmap</span>
+  </a>
+  <a href="https://roadmap.sh/system-design" target="_blank" rel="noreferrer">
+    <FaBook className="resource-icon docs" />
+    <span>System Design Roadmap</span>
+  </a>
+  <a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noreferrer">
+    <FaGithub className="resource-icon github" />
+    <span>System Design Primer (GitHub)</span>
+  </a>
+  <a href="https://www.educative.io/courses/grokking-the-system-design-interview" target="_blank" rel="noreferrer">
+    <FaBook className="resource-icon docs" />
+    <span>Grokking System Design (Educative)</span>
+  </a>
+  <a href="https://www.designgurus.io/" target="_blank" rel="noreferrer">
+    <FaBook className="resource-icon docs" />
+    <span>Design Gurus – Interview Prep</span>
+  </a>
+</div>
+      
     </div>
   );
 };
