@@ -44,6 +44,8 @@ html, body {
 .hero, .section, .glass, .resources-grid, .card-grid {
   max-width: 100% !important;
   overflow-x: hidden;
+  height: 80px;
+  overflow-y: hidden;
 }
 
 body {
