@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer"; 
+import Footer from "./components/Footer"; 
 
 import Home from "./pages/Home";
 import Event from "./pages/Event";

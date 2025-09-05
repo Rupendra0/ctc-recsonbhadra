@@ -1,12 +1,13 @@
 .footer {
   text-align: center;
   padding: 1.8rem 1rem;
-  background: rgba(15, 10, 35, 0.85); /* Deep galaxy tone */
+  background: rgba(15, 10, 35, 0.85);
   color: #e2e6f5;
   font-size: 0.95rem;
   backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(140, 120, 255, 0.25); /* Galaxy border */
+  border-top: 1px solid rgba(140, 120, 255, 0.25);
   box-shadow: 0 -4px 20px rgba(80, 60, 150, 0.35);
+  margin-top: auto; /* Footer always bottom */
 }
 
 .footer p {
@@ -14,7 +15,7 @@
 }
 
 .footer-link {
-  color: #a78bfa; /* Light purple accent */
+  color: #a78bfa;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -22,9 +23,9 @@
 
 .footer-link:hover {
   text-decoration: underline;
-  color: #c4b5fd; /* Brighter purple on hover */
+  color: #c4b5fd;
 }
 
 .footer strong {
-  color: #7c3aed; /* Vibrant violet for emphasis */
+  color: #7c3aed;
 }
