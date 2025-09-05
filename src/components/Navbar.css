@@ -100,11 +100,12 @@ nav.navbar .menu-toggle {
   gap: 6px;
   cursor: pointer;
   z-index: 2100;
+  background-color: rgba(25, 20, 50, 0.75); ;
 }
 nav.navbar .menu-toggle span {
   width: 26px;
   height: 3px;
-  background: #fff;
+  background:rgba(255, 255, 255, 0.75);;
   border-radius: 3px;
   transition: transform .25s ease, opacity .25s ease;
 }
