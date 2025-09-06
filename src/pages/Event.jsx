@@ -4,18 +4,21 @@ import "./Page.css";
 const Event = () => {
   return (
     <div className="page-container">
-      <div className="glass card">
-        <h2>Upcoming Events</h2>
-        <p>
-          Join our coding contests, workshops, and hackathons.
-          Stay tuned for upcoming announcements!
-        </p>
-        <ul>
-          <li>🔹 First-Year Induction – Welcoming and introducing first-year students to the club.</li>
-          <li>🔹 Second-Year Induction – Engaging and onboarding second-year students into the community.</li>
-          <li>🔹 Guest Lecture – Inspiring talk by Software Engineer from Google.</li>
-        </ul>
-      </div>
+        <h2> Upcoming Events</h2>
+        <div className="card-grid">
+          <div className="glass small-card" data-aos="zoom-in">
+            <h3>First-Year Induction</h3>
+            <p>Welcoming and introducing first-year students to the club</p>
+          </div>
+          <div className="glass small-card" data-aos="zoom-in" data-aos-delay="100">
+            <h3>Second-Year Induction</h3>
+            <p>Engaging and onboarding second-year students into the community</p>
+          </div>
+          <div className="glass small-card" data-aos="zoom-in" data-aos-delay="200">
+            <h3>Guest Lecture</h3>
+            <p>Inspiring talk from Sofware Engineer from Google</p>
+          </div>
+        </div>
     </div>
   );
 };
