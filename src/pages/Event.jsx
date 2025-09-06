@@ -3,7 +3,8 @@ import "./Page.css";
 
 const Event = () => {
   return (
-    <div className="page-container">
+    <div>
+   <section className="section" id="events" data-aos="fade-left">
         <h2> Upcoming Events</h2>
         <div className="card-grid">
           <div className="glass small-card" data-aos="zoom-in">
@@ -19,7 +20,8 @@ const Event = () => {
             <p>Inspiring talk from Sofware Engineer from Google</p>
           </div>
         </div>
-    </div>
+      </section>
+      </div>
   );
 };
 
