@@ -6,12 +6,12 @@ function Footer() {
     <footer className="footer">
       <p>
         Any suggestion ?{" "}
-        <a href="mailto:support@ctcclub.org" className="footer-link">
+        <a href="mailto:RecSonbhadra-ctc@hotmail.com" className="footer-link">
           Click here
         </a>{" "}
         or email us at{" "}
-        <a href="mailto:support@ctcclub.org" className="footer-link">
-          support@ctcclub.org
+        <a href="mailto:RecSonbhadra-ctc@hotmail.com" className="footer-link">
+          RecSonbhadra-ctc@hotmail.com
         </a>
       </p>
       <h3> <strong>Developers :</strong> Rupendra Gangwar & Aditya Agrahari </h3>
